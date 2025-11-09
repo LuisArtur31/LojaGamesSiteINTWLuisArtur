@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Carrinho - GameZone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="verificarLogin(); carregarCarrinho();">
+<header>
+  <div class="header-topo">
+    <h1>GameLounge</h1>
+  </div>
+  <div class="header-nav">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" id="link-carrinho" style="display:none;">Carrinho</a>
+    </nav>
+    <div id="area-logado" class="area-logado"></div>
+  </div>
+</header>
+
+
+  <main class="carrinho-main">
+    <h2>Seu Carrinho</h2>
+    <div id="carrinho-itens" class="carrinho-itens"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GameLounge - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

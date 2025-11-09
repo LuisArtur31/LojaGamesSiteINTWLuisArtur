@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loja de Games</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
+  <body onload="verificarLogin()"></body>
+<header>
+  <div class="header-topo">
     <h1>GameLounge</h1>
+  </div>
+  <div class="header-nav">
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Catálogo</a>
+      <a href="index.html">Início</a>
+      <a>Catálogo</a>
       <a href="contato.html">Contato</a>
+      <a href="carrinho.html" id="link-carrinho" style="display:none;">Carrinho</a>
     </nav>
-  </header>
+    <div id="area-logado" class="area-logado"></div>
+  </div>
+</header>
+
 
   <main>
     <section class="catalogo">
@@ -25,7 +34,7 @@
           <h3>Clair Obscur: Expedition 33</h3>
           <p>R$ 199,90</p>
           <button>Comprar</button>
-          <button>Adicionar ao Carrinho</button>
+          <button onclick="adicionarAoCarrinho('Clair Obscur: Expedition 33')">Adicionar ao Carrinho</button>
           <a href="COE33descricao.html" class="detalhes">Detalhes</a>
         </div>
       
@@ -35,7 +44,7 @@
           <h3>Assassin’s Creed Shadows</h3>
           <p>R$ 359,90</p>
           <button>Comprar</button>
-          <button>Adicionar ao Carrinho</button>
+          <button onclick="adicionarAoCarrinho('Assassin’s Creed Shadows')">Adicionar ao Carrinho</button>
           <a href="ACSdescricao.html" class="detalhes">Detalhes</a>
         </div>
 
@@ -44,7 +53,7 @@
           <h3>Doom: The Dark Ages</h3>
           <p>R$ 349,90</p>
           <button>Comprar</button>
-          <button>Adicionar ao Carrinho</button>
+          <button onclick="adicionarAoCarrinho('Doom: The Dark Ages')">Adicionar ao Carrinho</button>
           <a href="DDAdescricao.html" class="detalhes">Detalhes</a>
         </div>
 
@@ -53,7 +62,7 @@
           <h3>Split Fiction</h3>
           <p>R$ 249,90</p>
           <button>Comprar</button>
-          <button>Adicionar ao Carrinho</button>
+          <button onclick="adicionarAoCarrinho('Split Fiction')">Adicionar ao Carrinho</button>
           <a href="SFdescricao.html" class="detalhes">Detalhes</a>
         </div>
 
@@ -62,7 +71,7 @@
           <h3>The Last of Us 2 Remastered</h3>
           <p>R$ 249,90</p>
           <button>Comprar</button>
-          <button>Adicionar ao Carrinho</button>
+          <button onclick="adicionarAoCarrinho('The Last of Us 2 Remastered')">Adicionar ao Carrinho</button>
           <a href="TLOU2Rdescricao.html" class="detalhes">Detalhes</a>
   
       </div>

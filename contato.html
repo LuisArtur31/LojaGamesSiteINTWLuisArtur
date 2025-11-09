@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Contato</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -18,7 +20,7 @@
     <div class="contato-container">
         <div class="formulario">
             <h2>Fale Conosco</h2>
-            <form>
+            <form id="form-contato" onsubmit="validarContato(event)">
                 <fieldset>
                     <legend>Dados</legend>
                     <label for="nome">Nome*:</label><br>

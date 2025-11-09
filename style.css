@@ -191,6 +191,10 @@ nav a:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; 
   background-color: #1f1f1f;
   text-align: center;
   padding: 15px;
@@ -319,5 +323,152 @@ footer {
 }
 
 .btn-comprar:hover {
+  background-color: #cc0ebc;
+}
+
+
+
+.carrinho-main {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #1e1e1ecf;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.carrinho-main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff00ea;
+}
+
+.carrinho-itens ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho-itens li {
+  background-color: #292929;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrinho-itens button {
+  background-color: #ff00ea;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carrinho-itens button:hover {
+  background-color: #cc0ebc;
+}
+
+.finalizar-compra {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.finalizar-compra:hover {
+  background-color: #00ccaa;
+}
+
+header {
+  background-image: url("https://t4.ftcdn.net/jpg/07/69/62/99/360_F_769629905_QSbPhuGU5dCf82LLAw2AgWnKNuQGugeV.jpg");
+  background-color: #1f1f1f;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #121212);
+  z-index: 1;
+}
+
+header .header-topo {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+header .header-topo h1 {
+  font-size: 2em;
+  color: #a31515;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.header-nav nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav nav a {
+  color: #ccc;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.header-nav nav a:hover {
+  color: #ff0000;
+}
+
+.area-logado {
+  position: absolute;
+  right: 20px;
+}
+
+.area-logado a,
+.area-logado button {
+  background-color: #ff00ea;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.area-logado a:hover,
+.area-logado button:hover {
   background-color: #cc0ebc;
 }

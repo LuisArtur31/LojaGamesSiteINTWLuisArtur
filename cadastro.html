@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro / Login - GameLounge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>Cadastro / Login</h2>
+  <form onsubmit="cadastrar(event)">
+    <label for="cad-nome">Nome:</label>
+    <input type="text" id="cad-nome" required>
+    <label for="cad-email">E-mail:</label>
+    <input type="email" id="cad-email" required>
+    <label for="cad-senha">Senha:</label>
+    <input type="password" id="cad-senha" required>
+    <button type="submit">Cadastrar & Logar</button>
+  </form>
+</body>
+</html>
